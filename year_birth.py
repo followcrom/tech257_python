@@ -1,16 +1,16 @@
 age_int = int(input("How old are you? "))
 name_str = input("What is your name? ")
 
-print(f"OMG {name_str}, you are {age_int} years old so you were born in {2024 - age_int}.")
+# print(f"OMG {name_str}, you are {age_int} years old so you were born in {2024 - age_int}.")
 
 
 def calculate_hours(age):
     hours = age * 365 * 24
     return hours
 
-hours = calculate_hours(age_int)
+# hours = calculate_hours(age_int)
 
-print(f"OMG {name_str}, you have been alive for {hours:.2f} hours.")
+# print(f"OMG {name_str}, you have been alive for {hours:.2f} hours.")
 
 
 """
@@ -22,23 +22,22 @@ show in your script that you have evaluated the methods of calculating the hours
 from datetime import datetime
 
 # Get today's date
-today = datetime.today().date()
+today = datetime.now().date()
 
-print(f"Today's date is: {today}")
+# Prompt the user to enter a date
+dob = input("When we you born? (YYYY-MM-DD): ")
 
-# Prompt user for their date of birth in the format YYYY-MM-DD
-dob_str = input("What is your date of birth (YYYY-MM-DD)? ")
+# Convert the user input to a datetime object
+dob = datetime.strptime(dob, '%Y-%m-%d').date()
 
-# Convert the input string to a datetime object
-dob = datetime.strptime(dob_str, "%Y-%m-%d")
-# Assuming 'dob' is a datetime object
-dob_edit = dob.strftime("%m-%d")
-print(f"The month and day of your date of birth are: {dob_edit}")
+# Compare the user-entered date with today's date
+if dob < today:
+    print(f"OMG {name_str}, you are {age_int} years old so you were born in {2024 - age_int}.")
+else:
+    print(f"OMG {name_str}, you are {age_int} years old so you were born in {2023 - age_int}.")
 
-today_edit = today.strftime("%m-%d")
-print(f"The month and day for today are: {today_edit}")
 
-print(f"OMG {name_str}, you are {age_int} years old so you were born in {2024 - age_int}.")
+
 
 """
 Acceptance Criteria

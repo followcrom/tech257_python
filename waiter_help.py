@@ -22,7 +22,7 @@ while True:  # This creates an infinite loop
 
 # Print a list of mains
 mains = ["Prawn soup", "Gambas soup", "Duck soup", "Lebanese", "Fried duck"]
-print(mains)
+print("Mains:", mains)
 
 # Take an input for the user for their main course
 while True:  # This creates an infinite loop
@@ -36,7 +36,7 @@ while True:  # This creates an infinite loop
 
 # Print a list of desserts
 desserts = ["Prawn cake", "Gambas cake", "Duck cake", "Lebanese cake", "Fried cake"]
-print(desserts)
+print("Desserts:", desserts)
 # Take an input for the user for their dessert
 while True:  # This creates an infinite loop
     dessert_choice = input("And for your dessert? ")
@@ -64,10 +64,11 @@ customer_order_list = [starter_choice, main_choice, dessert_choice]
 price_dict = {"Prawns": 5, "Gambas": 4, "Tiger prawns": 6, "Moth prawns": 2, "Sly prawns": 3}
 bill = 0
 
-# Add each item ordered to a list called 'customer_order_list'
+
 for item in customer_order_list:
     if item in price_dict:
-        bill += price_dict[item]  # Add the price of the current item to the bill
+        print(item)
+        bill += price_dict[item]
     else:
         bill += 2.5
 

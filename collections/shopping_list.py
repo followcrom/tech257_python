@@ -21,7 +21,10 @@ print(len(shopping_lst))
 
 print("-------------------------------------------\n")
 new_lst = ["toffee", "coffee"]
-shopping_lst = shopping_lst + new_lst
+# shopping_lst = (
+shopping_lst.extend(new_lst)
+
+# = shopping_lst + new_lst
 print(shopping_lst)
 
 print("-------------------------------------------\n")
@@ -29,5 +32,5 @@ shopping_lst.remove("bananas")
 print(shopping_lst)
 
 print("-------------------------------------------\n")
-shopping_lst.pop(-1)
+shopping_lst.pop(2)
 print(shopping_lst)

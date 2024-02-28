@@ -2,12 +2,10 @@
 # Git Basics
 
 ## Introduction
-Git is a distributed version control system that allows developers to track changes in source code during software development.
-It's designed for coordinating work among programmers, but it can be used to track changes in any set of files.
+Git is a distributed version control system that allows developers to track changes in source code during software development. It's designed for coordinating work among programmers, but it can be used to track changes in any set of files.
 
 ## Before Git
-Centralized Version Control Systems (CVCS) rely on a single server to store all versions of a project's files, 
-with clients checking out files from this central location, simplifying collaboration but creating a single point of failure.
+Centralized Version Control Systems (CVCS) rely on a single server to store all versions of a project's files, with clients checking out files from this central location, simplifying collaboration but creating a single point of failure.
 
 ## Basic Commands
 
@@ -91,6 +89,27 @@ Shows the commit logs.
 ```bash
 git log
 ```
+
+ ```git diff
+ ```
+The git diff command shows the differences between various commits, branches, working directory, etc. It's a powerful way to see what has changed.
+
+The git checkout command is used to switch between branches or to check out files or commits. It can be used to update the working directory to match the specified branch, commit, or files.
+```git checkout feature-branch```
+```git checkout <commit-hash>```
+
+`git reset`
+The git reset command is used to undo changes. Its effect depends on the options used (--soft, --mixed, --hard).
+
+## Branching in Git
+Branching in Git allows you to diverge from the main line of development and continue to work independently without affecting the main line. It's a core concept in Git that enables multiple workflows like feature development, fixes, and experiments by creating isolated environments in the repository.
+
+Example:
+To create a new branch named feature-branch and switch to it:
+`git checkout -b feature-branch`
+This command combines the creation of a new branch and checking it out into one step.
+
+Branches are incredibly useful for managing features, fixes, or any changes that you want to keep separate from the main codebase until they're ready to be merged.
 
 ## Best Practices
 - Commit often with meaningful commit messages.
