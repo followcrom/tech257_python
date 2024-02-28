@@ -35,3 +35,4 @@ git add .
 git commit -m "message"
 
 CVCS vs DVCS
+Chuck a new line in
