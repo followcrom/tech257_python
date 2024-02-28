@@ -27,3 +27,11 @@ print(f"The sum of {a} and {b} is [c}")
 
 
 Add another line.
+
+Workflow of commands
+git init
+git status
+git add .
+git commit -m "message"
+
+CVCS vs DVCS
