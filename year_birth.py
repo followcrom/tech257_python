@@ -1,29 +1,9 @@
-"""First part
-define the variables age_int and name_str (set dummy/default/initial values)
-make a calculation for the year in which the person was born
-print out "OMG , you are years old so you were born in " with the correct values
-"""
-
-age_int = 50
-name_str = "Jones"
-
-print(f"OMG {name_str}, you are {age_int} years old so you were born in {2024 - age_int}.")
-
-"""
-Second Part
-prompt the user for inputs and assign the variable age_int and name_str
-remove the initial values set
-"""
-
 age_int = int(input("How old are you? "))
 name_str = input("What is your name? ")
 
 print(f"OMG {name_str}, you are {age_int} years old so you were born in {2024 - age_int}.")
 
-"""
-Third Part
-calculate and print out the total number of hours this person has lived
-"""
+
 def calculate_hours(age):
     hours = age * 365 * 24
     return hours
