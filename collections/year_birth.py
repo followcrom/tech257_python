@@ -31,7 +31,7 @@ dob = input("When we you born? (YYYY-MM-DD): ")
 dob = datetime.strptime(dob, '%Y-%m-%d').date()
 
 # Compare the user-entered date with today's date
-if dob < today:
+if dob > today:
     print(f"OMG {name_str}, you are {age_int} years old so you were born in {2024 - age_int}.")
 else:
     print(f"OMG {name_str}, you are {age_int} years old so you were born in {2023 - age_int}.")
