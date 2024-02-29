@@ -36,15 +36,6 @@ print x -> 2
 print x -> 3
 print x -> 4"""
 
-x = 0
-
-while x < 10:
-    if x != 5:
-        print(f"x -> {x}")
-        x += 1
-    else:
-        break
-
 
 print("\n-------------------------------------------")
 x = 0
