@@ -1,23 +1,9 @@
-def add(num_1, num_2):
-    return num_1 + num_2
+from math_operations import *
 
-print("Add:", add(4,5))
-
-def subtract(num_1, num_2):
-    return num_1 - num_2
-
-print("Subtract:", subtract(4,5))
-
-def multiply(num_1, num_2):
-    return num_1 * num_2
-
-print("Multiply:", multiply(4,5))
-
-def divide(num_1, num_2):
-    return num_1 / num_2
-
-print("Divide:", divide(4,5))
-
+first_num = int(input("Enter the first number: "))
+second_num = int(input("Enter the first number: "))
+result = add(first_num, second_num)
+print(f"{first_num} + {second_num} = {result}")
 
 
 user_num_1 = int(input("Input 1st number: "))
@@ -39,4 +25,3 @@ while True:
         break
     else:
         print("Please select an operator: +,-,*,/ ")
-

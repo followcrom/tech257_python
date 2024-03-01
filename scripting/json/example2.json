@@ -1,0 +1,57 @@
+{
+  "name": "Test Project",
+  "version": "1.0",
+  "description": "A project to test JSON to YAML conversion.",
+  "maintainer": {
+    "name": "John Doe",
+    "email": "john.doe@example.com"
+  },
+  "contributors": [
+    "Jane Doe",
+    "Max Mustermann"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/example/test-project.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.10",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4",
+    "jest": "^26.0.1"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "jest"
+  },
+  "environment": {
+    "production": {
+      "NODE_ENV": "production",
+      "DB_URI": "mongodb://prod.example.com:27017/testDB"
+    },
+    "development": {
+      "NODE_ENV": "development",
+      "DB_URI": "mongodb://dev.example.com:27017/testDB"
+    }
+  },
+  "features": [
+    "Fast and lightweight",
+    "Easy to use",
+    "Highly customizable"
+  ],
+  "bugs": {
+    "url": "https://github.com/example/test-project/issues"
+  },
+  "homepage": "https://example.com/test-project",
+  "keywords": [
+    "web",
+    "framework",
+    "nodejs"
+  ],
+  "private": false
+}
