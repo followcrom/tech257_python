@@ -1,10 +1,10 @@
-import os, subprocess
+import subprocess
 
-# Define a series of commands separated by semicolons (;)
-commands = ['sh', '../scripting/os_module/script.sh']
+# Define a Linux command or script you want to run
+command = ['echo', 'Hello from Ubuntu!']
 
-# Run the commands using the shell
-result = subprocess.run(commands, capture_output=True, text=True)
+# Run the command
+result = subprocess.run(command, capture_output=True, text=True)
 
 print("\n-------------------------------------------")
 print("Full output:", result)
@@ -29,11 +29,3 @@ if result.returncode == 0:
     print("Script executed successfully")
 else:
     print("Error in script execution")
-
-print("\n-------------------------------------------")
-# script_dir = os.path.dirname(__file__)
-# print(script_dir)
-#
-# script_absolute_path = os.path.join(script_dir + "/script.sh")
-# commands = ["sh", script_absolute_path]
-
