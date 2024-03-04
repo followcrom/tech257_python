@@ -31,7 +31,7 @@ REST APIS are designed for interacting with web services. An API is considered R
 - **Layered System**: The client cannot tell whether it is connected directly to the server or an intermediary.
 - **Uniform**: A standardized way to communicate between client and server.
 
-### What is HTTP? (what does it stand for and what is it used for?
+### What is HTTP? What does it stand for and what is it used for?
 
 HTTP : **Hypertext Transfer Protocol**
 
@@ -41,7 +41,7 @@ HTTP is the foundation of data communication on the World Wide Web. It defines h
 - **Submitting form data**: Information submitted through web forms is often sent to the server using HTTP.
 - **API communication**: Many web APIs use HTTP as a protocol for sending and receiving messages.
 
-### What is HTTPS?)
+### What is HTTPS?
 
 HTTPS : **Hypertext Transfer Protocol Secure**
 
@@ -50,6 +50,10 @@ HTTPS is the secure version of HTTP, where communications are encrypted using Tr
 _The HTTP request structure:_
 
 ![](imgs/http_request.png)
+
+_The HTTP response structure:_
+
+![](imgs/http_response.png)
 
 ### HTTP Verbs and Their Functions
 
