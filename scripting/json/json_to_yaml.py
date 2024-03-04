@@ -22,8 +22,6 @@ else:
 # y_file_1 = yaml.dump(source_content)
 # print(y_file_1)
 
-# print(yaml.dump(json.load(open(sys.argv[1])), default_flow_style=False))
-
 # Save the conversion in a new file (output.yaml)
 
 yml_dir = "yml_files"
@@ -31,7 +29,6 @@ parent_dir ="/home/followcrom/projects/pycharm-projects/github/tech257_python/sc
 
 path = os.path.join(parent_dir, yml_dir)
 # print(path)
-# os.mkdir(path)
 
 filename = sys.argv[2]
 filepath = os.path.join(path, filename)
