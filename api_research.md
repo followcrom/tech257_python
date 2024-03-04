@@ -2,53 +2,58 @@
 
 ### What are API’s?
 
-API : Application Programming Interface.
+API : **Application Programming Interface**
 
 APIs allow different software to communicate.
 
 ### How are they used and why are they so popular?
 
-- **Interoperability**: Facilitating communication between disparate systems.
-- **Efficiency**: Reducing development time by using existing services.
-- **Innovation**: Encouraging new solutions by combining services.
-- **Ecosystem Growth**: Allowing third-party developers to build on existing platforms.
+- Allow communication between systems.
+- Allows developers to use existing services and build on existing platforms.
 
 APIs are key in modern software development for their ability to connect and extend applications.
 
+_The data transfer process in API communication:_
+
 ![](imgs/apis.png)
 
-### What is a REST API? What makes an API RESTful? What are the REST guidelines?
+### What is a REST API?
 
-REST API : Representational State Transfer API
+REST API : **Representational State Transfer API**
 
-REST APIS are designed for interacting with web services. An API is considered RESTful if it:
+### What makes an API RESTful? What are the REST guidelines?
 
-- **Statelessness**: No client context is stored on the server between requests.
-- **Client-Server Separation**: The client and server act independently.
-- **Cacheability**: Responses must define themselves as cacheable or not.
+REST APIS are designed for interacting with web services. An API is considered RESTful if it is:
+
+- **Stateless**: No client data is stored on the server between requests.
+- **Separate**: The client and server act independently.
+- **Cacheable**: Responses must define themselves as cacheable or not.
 - **Layered System**: The client cannot tell whether it is connected directly to the server or an intermediary.
-- **Uniform Interface**: A standardized way to communicate between client and server, which includes:
-  - **Resource-Based**: Individual resources are identified in requests using URIs.
-  - **Manipulation of Resources Through Representations**: When a client holds a representation of a resource, it has enough information to modify or delete the resource.
-  - **Self-descriptive Messages**: Each message includes enough information to describe how to process it.
-  - **Hypermedia as the Engine of Application State (HATEOAS)**: Clients interact with a REST API entirely through the hypermedia provided dynamically by server responses.
+- **Uniform**: A standardized way to communicate between client and server.
 
-REST APIs are widely used due to their simplicity, scalability, and compatibility with web technologies.
+### What is HTTP? (what does it stand for and what is it used for?
 
-### What is HTTP? (what does it stand for and what is it used for? What is HTTPS?)
+HTTP : **Hypertext Transfer Protocol**
 
-HTTP (Hypertext Transfer Protocol) is the foundation of data communication on the World Wide Web. It defines how messages are formatted and transmitted, and how web servers and browsers should respond to various commands. It's used for:
+HTTP is the foundation of data communication on the World Wide Web. It defines how messages are formatted and transmitted, and how web servers and browsers should respond to various commands. It's used for:
 
 - **Requesting web pages**: When you visit a website, your browser sends an HTTP request to the server, which then responds with the requested page.
 - **Submitting form data**: Information submitted through web forms is often sent to the server using HTTP.
 - **API communication**: Many web APIs use HTTP as a protocol for sending and receiving messages.
 
-**HTTPS (HTTP Secure)** is the secure version of HTTP, where communications are encrypted using Transport Layer Security (TLS) or, formerly, Secure Sockets Layer (SSL). This adds a layer of security that protects against eavesdropping and tampering with the contents of the communication, making it essential for confidential online transactions like online banking or shopping.
+### What is HTTPS?)
 
+HTTPS : **Hypertext Transfer Protocol Secure**
+
+HTTPS is the secure version of HTTP, where communications are encrypted using Transport Layer Security (TLS) or Secure Sockets Layer (SSL). This adds a layer of security, making it essential for confidential online transactions like online banking or shopping.
+
+_The HTTP request structure:_
+
+![](imgs/http_request.png)
 
 ### HTTP Verbs and Their Functions
 
-HTTP defines a set of request methods, often referred to as "verbs," that indicate the desired action to be performed on a given resource. Here are five common HTTP verbs:
+HTTP "verbs" are a series of action that can be performed on a given resource. Here are five common HTTP verbs:
 
 - **GET**: Used to retrieve data from a specified resource. GET requests should only retrieve data and have no other effect.
   
@@ -59,8 +64,6 @@ HTTP defines a set of request methods, often referred to as "verbs," that indica
 - **PATCH**: Used to apply partial modifications to a resource. Unlike PUT, PATCH is not idempotent, meaning successive identical patch requests may have different effects.
 
 - **DELETE**: Used to delete the specified resource.
-
-Each verb has a specific meaning in terms of the action they perform and the expected results of that action, aligning with RESTful API principles.
 
 ### What is statelessness? Show examples of “stateless” and “stateful” http requests.
 
