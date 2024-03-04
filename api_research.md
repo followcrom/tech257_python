@@ -15,7 +15,7 @@ APIs allow different software to communicate.
 
 APIs are key in modern software development for their ability to connect and extend applications.
 
-[//]: # (![]&#40;/home/followcrom/projects/pycharm-projects/github/tech257_python/imgs/apis.png&#41;)
+![](imgs/apis.png)
 
 ### What is a REST API? What makes an API RESTful? What are the REST guidelines?
 
