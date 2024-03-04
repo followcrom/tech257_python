@@ -65,13 +65,11 @@ HTTP "verbs" are a series of action that can be performed on a given resource. H
 
 - **DELETE**: Used to delete the specified resource.
 
-### What is statelessness? Show examples of “stateless” and “stateful” http requests.
+### What is statelessness?
 
-Statelessness in web development refers to the server not storing any state about the client session on the server side. Each request from the client to the server must contain all the information necessary to understand and complete the request. The server does not rely on information stored from previous requests.
+Statelessness refers to the server not storing any state about the client session on the server side. Each request from the client to the server must contain all the information necessary to understand and complete the request. The server does not rely on information stored from previous requests.
 
 #### Stateless HTTP Request Example
-
-A **stateless** HTTP request does not require the server to remember any previous interaction. Each request is self-contained, carrying all necessary information.
 
 ```http
 GET /api/products/123 HTTP/1.1
@@ -80,9 +78,9 @@ Host: example.com
 In this example, a client requests details for a product with an ID of 123. The request is stateless because it contains all the information the server needs to process it (the product ID), without needing any prior knowledge of past requests.
 
 #### Stateful HTTP Request Example
-A stateful HTTP request relies on the server remembering previous interactions. Stateful behavior often involves tracking sessions.
 
-```GET /api/my-cart HTTP/1.1
+```http
+GET /api/my-cart HTTP/1.1
 Host: example.com
 Cookie: sessionId=abc123
 ```
