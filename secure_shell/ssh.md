@@ -20,7 +20,7 @@ SSH (Secure Shell) and HTTPS (Hypertext Transfer Protocol Secure) are both secur
 
 SSH is typically preferred for system administration, remote file manipulation, and secure access to network services, whereas HTTPS is the standard for secure web browsing and web-based transactions.
 
-![](..imgs/ssh_session.png)
+![](../imgs/ssh_session.png)
 
 ## Creating an SSH Key Pair
 
