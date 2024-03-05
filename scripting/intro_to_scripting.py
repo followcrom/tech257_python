@@ -35,5 +35,33 @@ x = {
 
 print(type(x))
 
+print("\n-------------------------------------------")
 y = json.dumps(x)
 print(y)
+print(type(y))
+
+print("\n-------------------------------------------")
+with open("output.json", "w") as file:
+    json.dump(x, file)
+    file.close()
+
+print("\n-------------------------------------------")
+with open("output.json", "r") as file_2:
+    contents = file_2.read()
+    print(contents)
+
+print("\n-------------------------------------------")
+print(type(contents))
+
+print("\n-------------------------------------------")
+with open("output.json", "r") as file_3:
+    contents_2 = json.load(file_3)
+    print(contents_2)
+
+print(type(contents_2))
+
+print("\n-------------------------------------------")
+contents_3 = json.loads(contents)
+print(contents_3)
+
+print(type(contents_3))
