@@ -2,19 +2,9 @@
 
 SSH, or Secure Shell, is a cryptographic network protocol used for secure communication between a client and a server over an insecure network.
 
-Key features include:
-
-- **Encryption**: Ensures that all data exchanged, including passwords, commands, and files, is encrypted to protect against eavesdropping and interception.
-
-- **Authentication**: SSH supports multiple authentication methods, with public key authentication being the most secure and commonly used.
-
-- **Integrity**: Utilizes cryptographic hashes to verify the integrity of the transmitted data, detecting any tampering during transit.
-
-- **Tunneling and Port Forwarding**: Allows for the secure tunneling of network connections and the forwarding of ports, facilitating secure communications over insecure networks.
-
 SSH is widely used for managing servers, accessing remote development environments, and securely transferring files. It typically runs on TCP port 22 and is available across various platforms including Linux, macOS, and Windows.
 
-### Why Use SSH Over HTTPS
+### Why Use SSH Over HTTPS?
 
 SSH (Secure Shell) and HTTPS (Hypertext Transfer Protocol Secure) are both secure protocols used for communication over the internet. However, they serve different purposes and have distinct advantages. Here's why you might choose SSH over HTTPS:
 
@@ -29,6 +19,8 @@ SSH (Secure Shell) and HTTPS (Hypertext Transfer Protocol Secure) are both secur
 - **Interactive Sessions**: SSH supports interactive sessions, allowing users to work on remote systems as if they were local, which is not possible with HTTPS.
 
 SSH is typically preferred for system administration, remote file manipulation, and secure access to network services, whereas HTTPS is the standard for secure web browsing and web-based transactions.
+
+![](imgs/ssh_session.png)
 
 ## Creating an SSH Key Pair
 
@@ -76,9 +68,8 @@ ssh-keygen -t rsa -b 4096
 ### 2. Protect Your Private Key
 Keep your private key secure. Use a strong passphrase and restrict access to the file.
 
-# Set file permissions to read/write for the user only
-
 ```
+# Set file permissions to read/write for the user only
 bash
 chmod 600 ~/.ssh/id_rsa
 ```
@@ -106,7 +97,7 @@ Restrict which IP addresses or networks can attempt to connect to your SSH serve
 ### 7. Use SSH Agent Forwarding with Caution
 SSH agent forwarding can be convenient but also presents a security risk. Use it sparingly and only on trusted machines.
 
-### 8. Implement Two-Factor Authentication (2FA)
+### 8. Implement 2FA
 Enhance security by adding an additional layer of authentication beyond the SSH key.
 
 ### 9. Monitor SSH Access Logs
